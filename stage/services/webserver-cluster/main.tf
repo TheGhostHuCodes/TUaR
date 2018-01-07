@@ -100,11 +100,6 @@ resource "aws_security_group" "elb" {
   }
 }
 
-variable "server_port" {
-  description = "The port the server will use for HTTP requests"
-  default     = 8080
-}
-
 output "elb_dns_name" {
   value = "${aws_elb.example.dns_name}"
 }
