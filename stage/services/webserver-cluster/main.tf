@@ -99,7 +99,3 @@ resource "aws_security_group" "elb" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-output "elb_dns_name" {
-  value = "${aws_elb.example.dns_name}"
-}
